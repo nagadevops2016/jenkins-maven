@@ -1,5 +1,5 @@
 #input file
-fin = open("sample/data.txt", "rt")
+fin = open("data.txt", "rt")
 #output file to write the result to
 fout = open("out.txt", "wt")
 #for each line in the input file
