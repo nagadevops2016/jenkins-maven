@@ -15,6 +15,6 @@ def replace(filePath, text, subs, flags=0):
     
 file_path="sample/data.txt"
 text="pyton"
-subs="raju"
+subs="$raju"
 #calling the replace method
 replace(file_path, text, subs)
