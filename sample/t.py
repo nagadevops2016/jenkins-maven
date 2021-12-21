@@ -1,4 +1,4 @@
-reading_file = open("data.txt", "r")
+reading_file = open("/var/jenkins_home/workspace/e1/sample/data.txt", "r")
 
 new_file_content = ""
 for line in reading_file:
