@@ -13,7 +13,7 @@ def replace(filePath, text, subs, flags=0):
         file.write(file_contents)
 
     
-file_path="data.txt"
+file_path="sample/data.txt"
 text="pyton"
 subs="python"
 #calling the replace method
