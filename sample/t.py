@@ -14,7 +14,7 @@ def replace(filePath, text, subs, flags=0):
 
     
 file_path="sample/data.txt"
-text="pyton"
-subs="python"
+text="python"
+subs="python3"
 #calling the replace method
 replace(file_path, text, subs)
