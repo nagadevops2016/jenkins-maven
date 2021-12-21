@@ -1,12 +1,20 @@
-reading_file = open("/var/jenkins_home/workspace/e1/sample/data.txt", "r")
+#importing the regex module
+import re
 
-new_file_content = ""
-for line in reading_file:
-    stripped_line = line.strip()
-    new_line = stripped_line.replace("pyton", "python")
-    new_file_content += new_line +"\n"
-reading_file.close()
+#defining the replace method
+def replace(filePath, text, subs, flags=0):
+    with open(file_path, "r+") as file:
+        #read the file contents
+        file_contents = file.read()
+        text_pattern = re.compile(re.escape(text), flags)
+        file_contents = text_pattern.sub(subs, file_contents)
+        file.seek(0)
+        file.truncate()
+        file.write(file_contents)
 
-writing_file = open("review.txt", "w")
-writing_file.write(new_file_content)
-writing_file.close()
+    
+file_path="data.txt"
+text="pyton"
+subs="python"
+#calling the replace method
+replace(file_path, text, subs)
