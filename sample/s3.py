@@ -1,8 +1,8 @@
 import boto3
 
 session = boto3.Session( 
-         aws_access_key_id='AKIAZIJX3N3NP62RM2FK', 
-         aws_secret_access_key='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')
+         aws_access_key_id='AKIA6LQSYPWOAZDZTOMC', 
+         aws_secret_access_key='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')
 
 
 #Then use the session to get the resource
