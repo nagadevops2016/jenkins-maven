@@ -8,7 +8,7 @@ session = boto3.Session(
 #Then use the session to get the resource
 s3 = session.resource('s3')
 
-my_bucket = s3.Bucket('ramesh123-openhift')
+my_bucket = s3.Bucket('cf-templates-1gunjwwz6d54h-us-west-1')
 
 for my_bucket_object in my_bucket.objects.all():
     print(my_bucket_object.key)
