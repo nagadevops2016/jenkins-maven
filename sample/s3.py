@@ -1,4 +1,4 @@
-import boto3
+import boto
 
 session = boto3.Session( 
          aws_access_key_id='AKIAZIJX3N3NP62RM2FK', 
