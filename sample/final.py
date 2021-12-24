@@ -9,7 +9,7 @@ conn = boto.connect_s3( aws_access_key_id = access_key, aws_secret_access_key = 
 now = datetime.datetime.now()
 
 
-s3client = boto3.client('s3')
+s3client = boto3.client('s3', aws_access_key_id = access_key, aws_secret_access_key = secret_key )
 
 # Get a list of all buckets
 allbuckets = s3client.list_buckets()
