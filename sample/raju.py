@@ -17,7 +17,7 @@ for bucket in s3.buckets.all():
 s3 = boto3.client('s3', aws_access_key_id='AKIA6LQSYPWOAZDZTOMC',
  aws_secret_access_key='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')	
 	
-allbuckets = s3client.list_buckets()
+allbuckets = s3.list_buckets()
 
 # Header Line for the output going to standard out
 print('Bucket'.ljust(45) + 'Size in Bytes'.rjust(25))
