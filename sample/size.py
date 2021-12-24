@@ -9,4 +9,4 @@ for bucket in conn.get_all_buckets():
 	for key in bucket:
 		total_bytes += key.size
 	total_bytes = total_bytes/1024/1024/1024
-	print "Bucket Name:" ,name, "Size: ",total_bytes ,"GB"
+	print ("Bucket Name:" ,name, "Size: ",total_bytes ,"GB")
