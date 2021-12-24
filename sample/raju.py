@@ -12,7 +12,12 @@ s3 = boto3.resource('s3', aws_access_key_id='AKIA6LQSYPWOAZDZTOMC',
 for bucket in s3.buckets.all():
     print (bucket.name)
     
-allbuckets = s3resource.list_buckets()
+	
+	
+s3 = boto3.client('s3', aws_access_key_id='AKIA6LQSYPWOAZDZTOMC',
+ aws_secret_access_key='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')	
+	
+allbuckets = s3client.list_buckets()
 
 # Header Line for the output going to standard out
 print('Bucket'.ljust(45) + 'Size in Bytes'.rjust(25))
