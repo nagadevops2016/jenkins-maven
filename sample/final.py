@@ -1,4 +1,5 @@
 import boto
+import boto3
 import datetime
 import boto.s3.connection
 access_key = 'AKIA6LQSYPWOAZDZTOMC'
@@ -7,7 +8,7 @@ conn = boto.connect_s3( aws_access_key_id = access_key, aws_secret_access_key = 
 
 now = datetime.datetime.now()
 
-cw = boto3.client('cloudwatch')
+
 s3client = boto3.client('s3')
 
 # Get a list of all buckets
