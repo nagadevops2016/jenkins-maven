@@ -21,7 +21,7 @@ allbuckets = s3.list_buckets()
 
 # Header Line for the output going to standard out
 print('Bucket'.ljust(45) + 'Size in Bytes'.rjust(25))
-for bucket in s3.get_all_buckets():
+for bucket in s3..buckets.all():
 	total_bytes = 0
 	name = bucket.name
 	for key in bucket:
