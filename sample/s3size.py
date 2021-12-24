@@ -16,7 +16,7 @@ def get_bucket_size(bucket_name):
         total_bytes += key.size
         n += 1
         if n % 2000 == 0:
-            print n
+            print ( n )
     total_gigs = total_bytes/1024/1024/1024
 
     print "%s: %i GB, %i objects" % (bucket_name, total_gigs, n)
