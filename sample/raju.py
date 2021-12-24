@@ -14,17 +14,5 @@ for bucket in s3.buckets.all():
     
 	
 	
-s3 = boto3.client('s3', aws_access_key_id='AKIA6LQSYPWOAZDZTOMC',
- aws_secret_access_key='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')	
-	
-allbuckets = s3.list_buckets()
 
-# Header Line for the output going to standard out
-print('Bucket'.ljust(45) + 'Size in Bytes'.rjust(25))
-for bucket in s3.buckets.all():
-	total_bytes = 0
-	name = bucket.name
-	for key in bucket:
-		total_bytes += key.size
-	total_bytes = total_bytes/1024/1024/1024
-	print ("Bucket Name:" ,name, "Size: ",total_bytes ,"GB")
+
