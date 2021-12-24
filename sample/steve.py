@@ -1,12 +1,12 @@
 import sys
 
-import boto
+import boto3
 
 
 # based on http://www.quora.com/Amazon-S3/What-is-the-fastest-way-to-measure-the-total-size-of-an-S3-bucket
 
 # assumes you've already configured your access id & secret key
-s3 = boto.connect_s3('s3',
+s3 = boto3.connect_s3('s3',
  aws_access_key_id='AKIA6LQSYPWOAZDZTOMC',
  aws_secret_access_key='cGWLdJqrbtWMAzfgDygpgP34wdTxGKd9kXAUm68A')
 
