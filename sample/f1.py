@@ -17,7 +17,7 @@ s3 = boto3.resource('s3',
  #aws_session_token='if session token',
  )
 size_byte=0
-my_bucket=s3.Bucket('example-bucket')
+my_bucket=s3.Bucket('allbuckets')
 for my_bucket_object in my_bucket.objects.all():
  print(my_bucket_object.key)
  size_byte=size_byte+my_bucket_object.size
