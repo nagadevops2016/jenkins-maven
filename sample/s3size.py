@@ -19,7 +19,7 @@ def get_bucket_size(bucket_name):
             print ( n )
     total_gigs = total_bytes/1024/1024/1024
 
-    print "%s: %i GB, %i objects" % (bucket_name, total_gigs, n)
+    print ( "%s: %i GB, %i objects" % (bucket_name, total_gigs, n) )
 
     return total_gigs, n
 
@@ -36,6 +36,6 @@ if __name__ == '__main__':
         size, object_count = get_bucket_size(bucket_name)
         bucket_sizes.append(dict(name=bucket_name, size=size, count=object_count))
 
-    print "\nTotals:"
+    print ( "\nTotals:" )
     for bucket_size in bucket_sizes:
-        print "%s: %iGB, %i objects" % (bucket_size["name"], bucket_size["size"], bucket_size["count"])
+        print ( "%s: %iGB, %i objects" % (bucket_size["name"], bucket_size["size"], bucket_size["count"]) )
