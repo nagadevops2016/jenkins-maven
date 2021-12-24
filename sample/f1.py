@@ -1,6 +1,7 @@
 import sys
 import boto3
 import datetime
+from botocore.exceptions import ClientError
 s3client = boto3.client(
  's3', 
  aws_access_key_id='AKIA6LQSYPWOAZDZTOMC',
