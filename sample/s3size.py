@@ -1,3 +1,4 @@
+import sys
 import boto
 import boto.s3.connection
 access_key = 'AKIA6LQSYPWOAZDZTOMC'
